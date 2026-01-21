@@ -31,20 +31,19 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h4 className="font-bold mb-6 text-white uppercase text-xs tracking-widest">Platform</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
               <li><button onClick={() => onNavigate?.('home')} className="hover:text-white transition-colors text-left">Distribution</button></li>
-              <li><button onClick={() => onNavigate?.('distribution-partners')} className="hover:text-brand-green transition-colors text-left flex items-center gap-2"><Globe size={14}/> Distribution Partners</button></li>
+              <li><button onClick={() => onNavigate?.('distribution-partners')} className="hover:text-brand-green transition-colors text-left flex items-center gap-2">Distribution Partners</button></li>
               <li><button onClick={() => onNavigate?.('video')} className="hover:text-white transition-colors text-left">Video Distribution</button></li>
-              <li><button onClick={() => onNavigate?.('youtube-cms')} className="hover:text-red-500 transition-colors text-left flex items-center gap-2"><Youtube size={14}/> YouTube Monetization</button></li>
+              <li><button onClick={() => onNavigate?.('youtube-cms')} className="hover:text-red-500 transition-colors text-left flex items-center gap-2">YouTube Monetization</button></li>
               <li><button onClick={() => onNavigate?.('services')} className="hover:text-white transition-colors text-left">Core Services</button></li>
               <li><button onClick={() => onNavigate?.('publishing')} className="hover:text-white transition-colors text-left">Publishing Admin</button></li>
               <li><button onClick={() => onNavigate?.('pricing')} className="hover:text-white transition-colors text-left">Detailed Pricing</button></li>
-              <li><button onClick={() => onNavigate?.('faq')} className="hover:text-white transition-colors text-left">Help & FAQ</button></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold mb-6 text-white uppercase text-xs tracking-widest">Support</h4>
             <ul className="space-y-4 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
+              <li><button onClick={() => onNavigate?.('faq')} className="hover:text-white transition-colors text-left">Help & FAQ</button></li>
               <li><a href="#" className="hover:text-white transition-colors">Contact Support</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Distribution Guide</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Royalty FAQ</a></li>

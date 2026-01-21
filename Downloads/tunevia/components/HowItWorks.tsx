@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Upload, Music, DollarSign } from 'lucide-react';
+import { Upload, Music, Wallet } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
   const steps = [
@@ -18,7 +18,7 @@ const HowItWorks: React.FC = () => {
       color: "brand-blue"
     },
     {
-      icon: <DollarSign size={32} className="text-brand-purple" />,
+      icon: <Wallet size={32} className="text-brand-purple" />,
       title: "Get Paid",
       desc: "Begin your music career here. Sell your music and get paid every time your music is played. All you have to do is upload your track and we’ve got it from there. Sell soundtracks online.",
       color: "brand-purple"
